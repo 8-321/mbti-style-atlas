@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MBTI 影像风格档案馆 · STYLE ATLAS</title>
+  <meta name="description" content="把 MBTI 视频例子拆成 4 种可复用的影像风格：暗室档案、萌猫寓言、木偶剧场、低多边形图鉴。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0d'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='serif' font-size='34' fill='%23e8db18'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <span class="brand-mark">M</span>
+      <span class="brand-copy"><strong>STYLE ATLAS</strong><small>MBTI 影像风格档案馆</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#families">风格族</a>
+      <a href="#coordinate">风格坐标</a>
+      <a href="#selector">选型器</a>
+      <a href="#all-films">全部样片</a>
+    </nav>
+    <a class="header-cta" href="#selector">找到我的风格 <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> MBTI / VIDEO STYLE ATLAS · 2026</p>
+        <h1>把 MBTI<br><em>拍成四种</em><br>影像语言</h1>
+        <p class="hero-lead">从 5 条成片里，抽出可复用的视觉系统、叙事骨架和复刻公式。不是影评，是下一次开拍前的选型台。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#families">进入风格族 <span>↓</span></a>
+          <a class="btn btn-ghost" href="#all-films">先看全部样片</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>04</dt><dd>套风格族</dd></div>
+          <div><dt>05</dt><dd>条影像</dd></div>
+          <div><dt>03</dt><dd>种画幅</dd></div>
+          <div><dt>19:33</dt><dd>总时长</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-label="四种风格预览">
+        <div class="hero-orbit orbit-a"></div>
+        <div class="hero-orbit orbit-b"></div>
+        <button class="hero-frame frame-archive" data-open-style="archive" aria-label="打开暗室档案">
+          <img src="media/posters/archive-1.jpg" alt="暗室档案风格：达芬奇手稿与纸片人">
+          <span class="frame-label">01 / 暗室档案</span>
+        </button>
+        <button class="hero-frame frame-cat" data-open-style="cat" aria-label="打开萌猫寓言">
+          <img src="media/posters/cat-2.jpg" alt="萌猫寓言风格：橘猫与猫形靶子">
+          <span class="frame-label">02 / 萌猫寓言</span>
+        </button>
+        <button class="hero-frame frame-puppet" data-open-style="puppet" aria-label="打开木偶剧场">
+          <img src="media/posters/puppet-2.jpg" alt="木偶剧场风格：三只木偶">
+          <span class="frame-label">03 / 木偶剧场</span>
+        </button>
+        <button class="hero-frame frame-atlas" data-open-style="atlas" aria-label="打开低多边形图鉴">
+          <img src="media/posters/atlas-2.jpg" alt="低多边形图鉴风格：INFJ 职业卡">
+          <span class="frame-label">04 / 低多边形图鉴</span>
+        </button>
+        <div class="hero-caption"><span>纸</span><span>猫</span><span>偶</span><span>几何</span></div>
+      </div>
+      <a class="scroll-hint" href="#families"><span>SCROLL TO EXPLORE</span><i></i></a>
+    </section>
+
+    <section class="section families" id="families">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / THE FAMILIES</p>
+          <h2>四种风格，<br>四种留人方式</h2>
+        </div>
+        <p class="section-note">每一族都从真实成片里反推：它靠什么让人停下来、看下去、记住你。点开卡片看完整片与复刻公式。</p>
+      </div>
+      <div class="style-grid" id="styleGrid"></div>
+    </section>
+
+    <section class="section coordinate-section" id="coordinate">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 / STYLE MAP</p>
+          <h2>风格坐标</h2>
+        </div>
+        <p class="section-note">横轴从「论证」到「故事」，纵轴从「图形」到「实拍感」。四种风格不是高低之分，是四种不同的注意力路径。</p>
+      </div>
+      <div class="coordinate-wrap">
+        <div class="coordinate">
+          <div class="axis axis-x"></div>
+          <div class="axis axis-y"></div>
+          <span class="axis-label axis-label-left">论证 / ARGUMENT</span>
+          <span class="axis-label axis-label-right">故事 / STORY</span>
+          <span class="axis-label axis-label-top">实拍感 / TACTILE</span>
+          <span class="axis-label axis-label-bottom">图形 / GRAPHIC</span>
+          <div class="coordinate-grid" aria-hidden="true"></div>
+          <button class="coord-point point-archive" data-open-style="archive" style="--x:25%;--y:38%">
+            <span class="coord-dot"></span><span class="coord-name">暗室档案</span><span class="coord-meta">论证 · 纸感</span>
+          </button>
+          <button class="coord-point point-cat" data-open-style="cat" style="--x:76%;--y:74%">
+            <span class="coord-dot"></span><span class="coord-name">萌猫寓言</span><span class="coord-meta">故事 · 3D</span>
+          </button>
+          <button class="coord-point point-puppet" data-open-style="puppet" style="--x:57%;--y:82%">
+            <span class="coord-dot"></span><span class="coord-name">木偶剧场</span><span class="coord-meta">故事 · 实物</span>
+          </button>
+          <button class="coord-point point-atlas" data-open-style="atlas" style="--x:18%;--y:16%">
+            <span class="coord-dot"></span><span class="coord-name">低多边形图鉴</span><span class="coord-meta">论证 · 图形</span>
+          </button>
+        </div>
+        <aside class="coordinate-aside">
+          <p class="aside-kicker">怎么读</p>
+          <p>想建立「我有判断」的人设，往左上走；想让人代入、评论、转发，往右下走。</p>
+          <div class="aside-rule"></div>
+          <p class="aside-small">坐标是创作建议，不是人格定论。MBTI 在这里是内容入口，不是科学判决。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section selector-section" id="selector">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">03 / STYLE SELECTOR</p>
+          <h2>下一步，拍哪一种？</h2>
+        </div>
+        <p class="section-note">选一个目标，再选一个你想对话的人格组。我们给你一个主推风格和一个备选方向。</p>
+      </div>
+      <div class="selector-shell">
+        <div class="selector-controls">
+          <div class="control-group">
+            <p class="control-label">你的目标</p>
+            <div class="chip-row" id="goalChips">
+              <button class="chip is-active" data-goal="growth">涨粉 / 完播</button>
+              <button class="chip" data-goal="depth">深度 / 人设</button>
+              <button class="chip" data-goal="emotion">情绪 / 评论</button>
+              <button class="chip" data-goal="series">低成本系列</button>
+            </div>
+          </div>
+          <div class="control-group">
+            <p class="control-label">你想对话的人格组</p>
+            <div class="chip-row" id="groupChips">
+              <button class="chip" data-group="NT">NT 理性组</button>
+              <button class="chip is-active" data-group="NF">NF 理想组</button>
+              <button class="chip" data-group="SJ">SJ 秩序组</button>
+              <button class="chip" data-group="SP">SP 体验组</button>
+            </div>
+          </div>
+        </div>
+        <div class="selector-result" id="selectorResult" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section all-films" id="all-films">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">04 / ALL FILMS</p>
+          <h2>全部样片</h2>
+        </div>
+        <div class="film-filters" id="filmFilters">
+          <button class="filter is-active" data-filter="all">全部 <span>05</span></button>
+          <button class="filter" data-filter="final">成片 <span>05</span></button>
+        </div>
+      </div>
+      <div class="film-rail" id="filmRail"></div>
+      <p class="rail-note">5 条成片均为本项目重制版本，按风格分组收录。</p>
+    </section>
+
+    <section class="section compare-section" id="compare">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">05 / COMPARE</p>
+          <h2>一页对照</h2>
+        </div>
+        <p class="section-note">把四种风格的关键参数放在同一张表里，开拍前先对齐画幅、节奏和制作成本。</p>
+      </div>
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr><th>风格</th><th>媒材</th><th>叙事</th><th>画幅 / 时长</th><th>节奏</th><th>适合</th><th>难度</th></tr>
+          </thead>
+          <tbody id="compareBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">THE END / THE START</p>
+      <h2>风格不是滤镜，<br>是观众记住你的方式。</h2>
+      <p>先选一个能稳定复用的世界，再决定每期讲什么。四种风格都从真实片子里拆出来，下一步就是把它变成你的系列。</p>
+      <a class="btn btn-primary" href="#families">回到风格族 <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark">M</span><div><strong>STYLE ATLAS</strong><small>MBTI 影像风格档案馆</small></div></div>
+    <div class="footer-meta"><span>5 条影像 · 4 套风格 · 19:33</span><span>STYLE ATLAS · 2026</span></div>
+  </footer>
+
+  <div class="modal" id="styleModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="关闭">×</button>
+      <div class="modal-scroll" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+
+
