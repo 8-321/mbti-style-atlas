@@ -316,8 +316,26 @@ const GROUPS = {
   }
 };
 
-const ALL_FILMS = [
-  ...STYLES.map((s) => ({
+const TYPES = [
+  { code: "INTJ", group: "NT", styleId: "archive", reason: "长线判断需要一张证据桌，把抽象战略落成可检查的纸。" },
+  { code: "INTP", group: "NT", styleId: "atlas", reason: "分类癖的快乐：16 个格子、编号和定义，正好装下你的模型。" },
+  { code: "ENTJ", group: "NT", styleId: "archive", reason: "结论先行、案例支撑，档案桌是最像“作战室”的影像。" },
+  { code: "ENTP", group: "NT", styleId: "atlas", reason: "反差钩子加清单体，编号倒计时能把脑洞变成系列。" },
+  { code: "INFJ", group: "NF", styleId: "cat", reason: "用一个寓言装道德困境，可爱外壳让沉重判断被听完。" },
+  { code: "INFP", group: "NF", styleId: "puppet", reason: "私人的内心戏适合木偶舞台，影子比台词更能说出你。" },
+  { code: "ENFJ", group: "NF", styleId: "cat", reason: "关系与伦理是主场，猫村故事让观众代入而不是被说教。" },
+  { code: "ENFP", group: "NF", styleId: "atlas", reason: "把热情变成可枚举的清单，16 次对号入座就是 16 次转发。" },
+  { code: "ISTJ", group: "SJ", styleId: "atlas", reason: "秩序感优先：编号、分组、职位列表，信息一眼可查。" },
+  { code: "ISFJ", group: "SJ", styleId: "cat", reason: "照顾型叙事适合寓言，先让人喜欢角色，再让人理解处境。" },
+  { code: "ESTJ", group: "SJ", styleId: "archive", reason: "结论、证据、排名，三段式最符合你的汇报本能。" },
+  { code: "ESFJ", group: "SJ", styleId: "cat", reason: "群体关系与情绪流动，猫村的暖色能接住你的共情。" },
+  { code: "ISTP", group: "SP", styleId: "puppet", reason: "少说话、多给机制，木偶舞台用动作把一件事讲清。" },
+  { code: "ISFP", group: "SP", styleId: "puppet", reason: "审美与感受先行，克制的舞台让情绪有地方停。" },
+  { code: "ESTP", group: "SP", styleId: "puppet", reason: "现场感和戏感，木偶的动作比长段旁白更快抓住人。" },
+  { code: "ESFP", group: "SP", styleId: "cat", reason: "可爱、直接、有情绪，萌宠外壳最适合即时感染力。" }
+];
+
+const ALL_FILMS = [  ...STYLES.map((s) => ({
     id: s.id,
     kind: "final",
     kindLabel: "成片",

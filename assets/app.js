@@ -346,8 +346,25 @@ function openFilm(id) {
   else openStyle(film.styleId);
 }
 
-function bindEvents() {
-  document.addEventListener("click", (event) => {
+function renderTypes() {
+  const grid = $("#typeGrid");
+  if (!grid) return;
+  grid.innerHTML = TYPES.map((t) => {
+    const s = styleById[t.styleId];
+    return `
+      <article class="type-card" style="--accent:${s.accent}" data-open-style="${s.id}" tabindex="0" role="button" aria-label="打开 ${esc(t.code)} 推荐风格 ${esc(s.name)}">
+        <div class="type-top">
+          <span class="type-code">${t.code}</span>
+          <span class="type-group">${t.group}</span>
+        </div>
+        <div class="type-style"><i></i>${esc(s.name)}</div>
+        <p class="type-reason">${esc(t.reason)}</p>
+        <span class="type-arrow">↗</span>
+      </article>`;
+  }).join("");
+}
+
+function bindEvents() {  document.addEventListener("click", (event) => {
     const close = event.target.closest("[data-close-modal]");
     if (close) { closeModal(); return; }
 
@@ -413,6 +430,7 @@ function init() {
   renderStyles();
   renderFilms();
   renderCompare();
+  renderTypes();
   renderSelector();
   bindEvents();
   bindPreviews();
